@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>MNTN Landing Page</title>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="pc-nav">
+            <figure class="logo-container">
+                <img src="Images/logo.png" alt="Logo MNTN" class="logo">
+            </figure>
+            <ul class="pc-nav__list">
+                <li class="pc-nav__list-items"><a href="#">Equipment</a></li>
+                <li class="pc-nav__list-items"><a href="#">About Us</a></li>
+                <li class="pc-nav__list-items"><a href="#">Blog</a></li>
+            </ul>
+            <div class="login-container">
+                <figure class="login-icon__container">
+                    <img src="Images/Login Icon.png" alt="Login Icon">
+                </figure>
+                <p class="login-info">Account</p>
+            </div>
+        </nav>
+        <div class="banner-content__container">
+            <div class="tagline">
+                <div class="tagline__line"></div>
+                <h3 class="tagline__heading">A Hiking Guide</h3>
+            </div>
+            <h2 class="banner-content__main-heading">Be Prepared For The Mountains And Beyond!</h2>
+        </div>
+    </header>
+    <section class="content-section" id="first-section">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="content-counter">01</div>
+                <div class="tagline">
+                    <div class="tagline__line"></div>
+                    <h3 class="tagline__heading">Get Started</h3>
+                </div>
+                <h2 class="content-heading">What level of  hiker are you?</h2>
+                <p class="content-des">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?</p>
+                <a href="#" class="content-readmore__btn">Read More</a>
+            </div>
+            <figure class="content__image-container">
+                <img src="Images/01.png" alt="Walking" class="content-image">
+            </figure>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="content-wrapper">
+            <figure class="content__image-container">
+                <img src="Images/02.png" alt="Walking" class="content-image">
+            </figure>
+            <div class="content">
+                <div class="content-counter">02</div>
+                <div class="tagline">
+                    <div class="tagline__line"></div>
+                    <h3 class="tagline__heading">HIKING ESSENTIALS</h3>
+                </div>
+                <h2 class="content-heading">Picking the right Hiking Gear!</h2>
+                <p class="content-des">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+                <a href="#" class="content-readmore__btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="content-counter">03</div>
+                <div class="tagline">
+                    <div class="tagline__line"></div>
+                    <h3 class="tagline__heading">WHERE YOU GO IS THE KEY</h3>
+                </div>
+                <h2 class="content-heading">Understand Your Map & Timing</h2>
+                <p class="content-des">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
+                <a href="#" class="content-readmore__btn">Read More</a>
+            </div>
+            <figure class="content__image-container">
+                <img src="Images/03.png" alt="Walking" class="content-image">
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content__left">
+                <figure class="logo-container">
+                    <img src="Images/logo.png" alt="Logo MNTN" class="logo">
+                </figure>
+                <p class="footer-content__left-description">Get out there & discover your next slope, mountain & destination!</p>
+                <p class="copyright-description">Copyright 2021 MNTN, Inc. Terms & Privacy
+                    A concept by Kryston Schwarze</p>
+            </div>
+            <div class="footer-content__right">
+                <div class="footer-list__container">
+                    <h3 class="footer-list__heading">More On The Blog</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-items"><a href="#">About MNTN</a></li>
+                        <li class="footer__list-items"><a href="#">Contributors And Writers</a></li>
+                        <li class="footer__list-items"><a href="#">Write For Us</a></li>
+                        <li class="footer__list-items"><a href="#">Contact Us</a></li>
+                        <li class="footer__list-items"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list__container">
+                    <h3 class="footer-list__heading">More On The Blog</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-items"><a href="#">About MNTN</a></li>
+                        <li class="footer__list-items"><a href="#">Contributors And Writers</a></li>
+                        <li class="footer__list-items"><a href="#">Write For Us</a></li>
+                        <li class="footer__list-items"><a href="#">Contact Us</a></li>
+                        <li class="footer__list-items"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const mainHeading = document.querySelector('.banner-content__main-heading');
+        window.addEventListener('scroll' , () => {
+            mainHeading.classList.add('animate');
+            mainHeading.style.top = `${scrollY}px`;
+        })
+
+    </script>
+</body>
+</html>
